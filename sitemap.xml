@@ -4,10 +4,10 @@
     xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
     https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd/sitemap.xsd">
  <url>
-  <loc>httpss://ndex.market/</loc>
+  <loc>https://ndex.market/</loc>
  </url>
  <url>
-  <loc>httpss://ndex.market/about/</loc>
+  <loc>https://ndex.market/about/</loc>
  </url>
  <url>
   <loc>https://ndex.market/#!/trade/0ED-ETH</loc>
