@@ -1,0 +1,368 @@
+<html>
+<head>
+
+    <title>About BitoxIO, and more!</title>
+
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+
+    <script>
+
+      $(document).ready(function ($) {
+
+        //if page loaded with a hash, smooth scroll to it
+        if (window.location.hash !== '') {
+          scroll_to_hash(window.location.hash);
+        }
+
+        //bind accordion
+        $('#faqs').find('.accordion-toggle').click(function () {
+
+          //Expand or collapse this panel
+          $(this).next().slideToggle('fast');
+
+          //Hide the other panels
+          $(".accordion-content").not($(this).next()).slideUp('fast');
+
+        });
+
+        // Add smooth scrolling to nav links
+        $("a.hash").on('click', function (event) {
+          event.preventDefault();
+
+          scroll_to_hash(this.hash);
+
+          window.location.hash = this.hash;
+        });
+      });
+
+      function scroll_to_hash(hash) {
+        if (hash === '#roadmap') {
+          var offsettop = 0;
+        } else {
+          var offsettop = $('a[name="' + hash + '"]').offset().top;
+        }
+
+        $('html, body').animate({
+          scrollTop: offsettop,
+        }, 1000);
+      }
+
+    </script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f7f7;
+            font-family: Segoe UI;
+            padding: 70px 0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 200;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 200;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            /* position: relative; */
+            z-index: 9;
+            background: #FFF;
+            box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+        }
+
+        .header a {
+            padding: 20px 30px;
+            display: inline-block;
+            text-decoration: none;
+            color: #394b59;
+        }
+
+        .header a:hover {
+            color: #fe5f2c;
+        }
+
+        .content {
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid #E0E0E0;
+            padding: 12px;
+            color: #212121;
+            background: #FFF;
+            font-size: 15px;
+            line-height: 1.45em;
+            box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+        }
+
+        /* accordion css */
+        #faqs {
+            width: 1000px;
+            box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+            margin: 0 auto;
+        }
+
+        .accordion-toggle,
+        .accordion-content {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .accordion-toggle {
+            cursor: pointer;
+            background: #394b59;
+            padding: 12px;
+            cursor: pointer;
+            border-right: 1px solid #2d3d4a;
+            border-left: 1px solid #2d3d4a;
+            border-bottom: 1px solid #2d3d4a;
+            min-height: 20px;
+            transition: .25s;
+
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 1.3em;
+            color: #ffffff;
+        }
+
+        .accordion-content {
+            display: none;
+            border-left: 1px solid #E0E0E0;
+            border-right: 1px solid #E0E0E0;
+            border-bottom: 1px solid #E0E0E0;
+            padding: 12px;
+            color: #212121;
+            background: #FFF;
+            font-size: 15px;
+            line-height: 1.45em;
+        }
+
+        .accordion-content.open {
+            display: block;
+        }
+
+        /* timeline css */
+        .timeline .demo-card-wrapper {
+            position: relative;
+            margin: auto;
+        }
+
+        .timeline .demo-card-wrapper::after {
+            z-index: 1;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            border-left: 1px solid rgba(191, 191, 191, 0.4);
+        }
+
+        .timeline .demo-card {
+            position: relative;
+            display: block;
+            margin: 10px auto;
+            z-index: 2;
+            max-width: 1000px;
+            box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+        }
+
+        .timeline .demo-card .head {
+            position: relative;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            font-weight: 400;
+        }
+
+        .timeline .demo-card .head .number-box {
+            display: inline;
+            float: left;
+            margin: 15px;
+            padding: 10px;
+            font-size: 35px;
+            line-height: 35px;
+            font-weight: 600;
+            background: rgba(0, 0, 0, 0.17);
+        }
+
+        .timeline .demo-card .head h2 {
+            font-size: 24px;
+            font-weight: inherit;
+            letter-spacing: 2px;
+            margin: 0;
+            padding-bottom: 6px;
+            line-height: 26px;
+            text-align: left;
+        }
+
+        .timeline .demo-card .head h2 span {
+            display: block;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        @media (min-width: 480px) {
+            .timeline .demo-card .head h2 span {
+                font-size: 0.8rem;
+            }
+        }
+
+        .timeline .demo-card {
+            background: #394b59;
+        }
+
+        .timeline .demo-card.green {
+            background: #77DD77;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <a href="https://www.bitox.io">Trade</a>
+    <a class="hash" href="#roadmap">Roadmap</a>
+    <!--<a class="hash" href="#donate">Donate</a>-->
+    <a class="hash" href="#faqs">FAQs</a>
+</div>
+
+<a name="#roadmap"></a>
+<h1>BitoxIO Roadmap</h1>
+
+<section class=timeline>
+
+</section>
+
+<h2>Possible Future Changes</h2>
+
+<section class=timeline>
+
+</section>
+
+<!--<a name="#donate"></a>-->
+<!--<h1 style="margin-top: 120px;">Donate</h1>-->
+<!--<div class="content">-->
+<!---->
+<!--</div>-->
+
+<a name="#faqs"></a>
+<h1 style="margin-top: 120px;">Frequently Asked Questions</h1>
+
+<div id="faqs">
+    <h4 class="accordion-toggle">What is Bitox.io?</h4>
+    <div class="accordion-content open">
+        Bitox.io is a decentralized Ethereum Token Exchange. Any ERC20 token can be listed by simply submitting
+        this form (google form link)
+    </div>
+
+    <h4 class="accordion-toggle">What is a decentralized exchange?</h4>
+    <div class="accordion-content">
+        A decentralized exchange is an exchange that doesn't rely on a centralized party to store user's funds
+        and facilitate trades. Funds are stored in a smart contract hosted on the Ethereum network. Trades also occur directly between users
+        using the same smart contract.
+    </div>
+
+    <h4 class="accordion-toggle">How to create an account?</h4>
+    <div class="accordion-content">
+        All you need is an Ethereum wallet! We strongly suggest to use MetaMask or Ledger for security reasons.
+        You can also import an account using the dropdown menu in the top right.
+    </div>
+
+    <h4 class="accordion-toggle">How do I deposit funds?</h4>
+    <div class="accordion-content">
+        Select the account first, in the Deposit/Withdraw/Transfer window, select Deposit, then select the amount
+        of either Ethereum or tokens you would like to deposit. You will then be asked to sign or accept the transaction. Once the
+        transaction has been sent, your funds are deposited securely into the smart contract on the Ethereum network. Then, you'll be able
+        to trade with those funds!
+    </div>
+
+    <h4 class="accordion-toggle">How long does it take to withdraw or deposit funds?</h4>
+    <div class="accordion-content">
+        As Bitox.io depends on a smart contract hosted on the Ethereum network, the speed of transactions depends
+        entirely on the speed of the Ethereum network. If you would like deposits, withdrawals, trades, or orders to be processed faster,
+        you can increase the gas price for your transactions. Under normal loads, with a normal gas price, deposits and withdrawals
+        shouldn't take longer than 5 minutes. However, when the Ethereum network is clogged, transactions could be delayed.
+        <br/>
+        For information on the current state of the Ethereum network, please go to EthGasStation.
+        <br/>
+        To increase/decrease gas price please use ACCOUNT menu and locate "Gas price" button
+    </div>
+
+    <h4 class="accordion-toggle">Selecting a token</h4>
+    <div class="accordion-content">
+        At Bitox.io, you can trade any ERC20 token that is available on the Ethereum network. We aim to list as
+        many tokens as possible. The listed tokens can be found in a dropdown menu near the upper left section.
+        <br/>>
+        However, there is another way to select which token to trade that works even if we haven't listed the token yet!
+        <br/>
+        If you would like to trade a token that is not listed on Bitox.io, simply scroll down token menu until
+        "Other" option appears. Then you can type in any contract information you wish.
+    </div>
+
+    <h4 class="accordion-toggle">Placing an order</h4>
+    <div class="accordion-content">
+        After funds have been placed in the smart contract, you are ready to place or take an order. If you would
+        like to create a buy or sell order instead of taking an order that already exists, first, find the New Order section. Then, select
+        either buy or sell and enter in the token amount you would like to buy or sell, the price, the expiration time, and hit Buy/Sell.
+        You will then be prompted to sign the transaction, so that it can be sent to the order book. Once a taker for your order has been
+        found, Bitox.io will use that signed order to execute a trade using the smart contract on the Ethereum network.
+    </div>
+
+    <h4 class="accordion-toggle">Taking an order</h4>
+    <div class="accordion-content">
+        To take an existing order, simply click on the order you would like to take in the Order Book. You will
+        be prompted with a window asking you to specify the amount you would like to take. After you hit the accompanying Buy or Sell
+        button, you will then be prompted to sign the transaction, so that your trade can be sent to the smart contract. Bitox.io will give
+        you a transaction ID (Txhash) and a link. You can track your trade status by either clicking the link, or copying the transaction ID
+        (Txhash) and searching it on EtherScan. Trades don't always show up immediately on EtherScan and the speed of the transaction
+        depends on the Ethereum network's congestion and your set gas price.
+    </div>
+
+    <h4 class="accordion-toggle">Cancelling and order</h4>
+    <div class="accordion-content">
+        To cancel an order, take a look at the My Transactions section and click the Orders tab. Your active
+        orders will be listed there with a link to cancel them. You will be asked to sign a transaction in order to cancel the order.
+    </div>
+
+    <h4 class="accordion-toggle">Fees</h4>
+    <div class="accordion-content">
+        There are two trading fees while using the Bitox.io platform. The first is the small Ethereum fee for
+        signing transactions to the Ethereum network (it is paid directly to the Ethereum network). The second is a 0.3% fee on execution of
+        orders, collected by Bitox.io
+    </div>
+
+    <h4 class="accordion-toggle">Listing your token on Bitox.io</h4>
+    <div class="accordion-content">
+        Any ERC20 token can be listed if they meet certain criteria. To submit you listing request please fill in
+        this form (google form link)
+    </div>
+</div>
+
+</body>
+</html>

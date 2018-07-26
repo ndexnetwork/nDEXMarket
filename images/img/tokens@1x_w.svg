@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="28px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon/controlBit@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon/controlBit" stroke="#FFFFFF">
+            <g id="noun_1389221_cc" transform="translate(5.500000, 6.000000)">
+                <path d="M0.8125,25.72375 L10.5625,25.72375" id="Shape" stroke-width="2.5"></path>
+                <path d="M38.1875,25.72375 L48.5,25.72375" id="Shape" stroke-width="2.5"></path>
+                <polyline id="Shape" stroke-width="2.5" points="10.5625 25.30125 24.375 0 38.1875 25.30125"></polyline>
+                <path d="M24.375,33.3125 L24.375,4.0625" id="Shape" stroke-width="2"></path>
+                <polyline id="Shape" stroke-width="2.5" points="10.5625 32.5325 24.375 52 38.1875 32.5325"></polyline>
+                <polyline id="Shape" stroke-width="2.5" points="38.1875 25.72375 24.375 34.125 10.5625 25.72375"></polyline>
+                <path d="M24.375,51.1875 L24.375,0.914347139" id="Shape" stroke-width="2.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>
