@@ -17,7 +17,7 @@
   "gasTrade": 250000,
   "gasOrder": 250000,
   "minOrderSize": 0.000001,
-  "socketServer": "#nDEX",
+  "socketServer": "https://server.ndex.market",
   "userCookie": "nDEX",
   "eventsCacheCookie": "nDEX_eventsCache",
   "ordersCacheCookie": "nDEX_ordersCache",
