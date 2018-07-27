@@ -1,2 +1,2 @@
-# ndexnetwork.github.io
+#nDEX.Market
 Development repository for nDEX main platform.
