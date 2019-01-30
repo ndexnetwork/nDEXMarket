@@ -1,6 +1,6 @@
 Extended Introduction of nDEX Network and Few Lines for Community
 
-By Tanvir Rahaman & Rasheed Ahmed
+By Tanvir Rahaman 
 
 The blockchain technology continues on its run of universal wide adoption. Many projects continue to surface on the platform with variety of use cases, from technology, freelance market places, real estate, to payment gateways. The use cases offer by most of these projects however do not have much significant impact on the end users of the technology, especially fun — wise.
 
