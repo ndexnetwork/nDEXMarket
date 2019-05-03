@@ -1,6 +1,6 @@
 Extended Introduction of nDEX Network and Few Lines for Community
 
-By Tanvir Rahaman 
+ 
 
 The blockchain technology continues on its run of universal wide adoption. Many projects continue to surface on the platform with variety of use cases, from technology, freelance market places, real estate, to payment gateways. The use cases offer by most of these projects however do not have much significant impact on the end users of the technology, especially fun — wise.
 
@@ -14,9 +14,7 @@ nDEX Market is a decentralized Ethereum tokens exchange developed to offer users
 
 
 
-BlockRoll is an Ethereum smart contract based dice game platform (https://blockroll.fun). The platform is set to offer nDEX community a decentralized dice gaming experience, with the web and app (google play) version of the platform nearing completion (75% completed) and expected to launch by the end of October, the entire community are on a fun-filled journey that would revolutionize peer — to — peer dice gaming.
-
-
+ 
 
 nEXBit is a centralized full scale crypto currency exchange which will run alongside nDEX Market the sister exchange on the nDEX network. The exchange which is still under development will have its beta released by November and official launch by December.
 
@@ -67,27 +65,8 @@ On ndex.market FREE token listing is going on, list your token here.
 Stay connected with us.
 
 
-Web: https://ndexnetwork.com
+ 
 
  DEX: https://ndex.market
  
- Telegram group : https://t.me/ndexofficial
- 
- Telegram ANN: https://t.me/ndexofficialchannel
- 
- Reddit: https://www.reddit.com/user/nDEXofficial/
- 
- GitHub: https://github.com/ndexnetwork
- 
- Twitter: https://twitter.com/NdexOfficial
- 
- Facebook: https://www.facebook.com/ndexnetwork
- 
- Medium: https://medium.com/@nDEXofficial
- 
- Bitcointalk: https://bitcointalk.org/index.php?topic=4479873
- 
- Linkedin: https://www.linkedin.com/company/ndex-network/
- 
- Bounty ANN: https://bitcointalk.org/index.php?topic=4549377
  
